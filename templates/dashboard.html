@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+
+<h1>This is dashboard representing fetching facebook account data
+</h1>
+
+<p>Status Message:
+{% if user.is_authenticated %}
+    HELLO, {{ user.username }}
+{% endif %}
+
+</p>
+<table>
+    <tbody>
+        <tr>
+            <td>
+                username :
+            </td>
+            <td>
+                {% if user.is_authenticated %}
+                    HELLO, {{ user.username }}
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                data 2 :
+            </td>
+            <td>
+                __
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
